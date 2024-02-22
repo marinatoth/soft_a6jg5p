@@ -19,10 +19,10 @@ namespace Pascal
                     button.Width = m;
                     button.Height = m;
                     button.Top = m * sor;
-                    button.Left = m * oszlop - sor*m/2 + Width/2; //Width = form szélesség
+                    button.Left = m * oszlop - sor*m/2 + ClientRectangle.Width/2 - m/2; //Width = form szélessége
                     int x = Faktorialis(sor) / (Faktorialis(oszlop) * Faktorialis(sor - oszlop));
                     button.Text = x.ToString();
-                    int a = 0;
+                    
                 }
             }
         }

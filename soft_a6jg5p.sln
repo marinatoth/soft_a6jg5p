@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzorzoTabla", "SzorzoTabla\SzorzoTabla.csproj", "{3FD24349-CF45-4EAD-A2BE-BB9DE04EAFB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzorzoTabla", "SzorzoTabla\SzorzoTabla.csproj", "{3FD24349-CF45-4EAD-A2BE-BB9DE04EAFB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{A87F4E72-3A00-4AE5-A12F-F39DED6CC224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{A87F4E72-3A00-4AE5-A12F-F39DED6CC224}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pascal", "Pascal\Pascal.csproj", "{7507A8C2-7FC9-4116-89E4-FD93E9F4C1B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pascal", "Pascal\Pascal.csproj", "{7507A8C2-7FC9-4116-89E4-FD93E9F4C1B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SakkTabla", "SakkTabla\SakkTabla.csproj", "{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{7507A8C2-7FC9-4116-89E4-FD93E9F4C1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7507A8C2-7FC9-4116-89E4-FD93E9F4C1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7507A8C2-7FC9-4116-89E4-FD93E9F4C1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

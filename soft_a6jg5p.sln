@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pascal", "Pascal\Pascal.csproj", "{7507A8C2-7FC9-4116-89E4-FD93E9F4C1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SakkTabla", "SakkTabla\SakkTabla.csproj", "{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SakkTabla", "SakkTabla\SakkTabla.csproj", "{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{61A0F229-7F09-4D4E-A5F4-E5D2BF51D5FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5480178-7D27-4FDB-A1BA-1F798F9F6D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A0F229-7F09-4D4E-A5F4-E5D2BF51D5FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A0F229-7F09-4D4E-A5F4-E5D2BF51D5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A0F229-7F09-4D4E-A5F4-E5D2BF51D5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A0F229-7F09-4D4E-A5F4-E5D2BF51D5FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

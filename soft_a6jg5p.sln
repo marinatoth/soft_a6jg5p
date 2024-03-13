@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SakkTabla", "SakkTabla\Sakk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{61A0F229-7F09-4D4E-A5F4-E5D2BF51D5FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoveButton", "LoveButton\LoveButton.csproj", "{88255CBC-2568-45B6-91BB-EECD7890EF58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoveButton", "LoveButton\LoveButton.csproj", "{88255CBC-2568-45B6-91BB-EECD7890EF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jatek", "jatek\jatek.csproj", "{48328087-CA32-42A6-9176-B22CEC13B8E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{88255CBC-2568-45B6-91BB-EECD7890EF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88255CBC-2568-45B6-91BB-EECD7890EF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88255CBC-2568-45B6-91BB-EECD7890EF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48328087-CA32-42A6-9176-B22CEC13B8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48328087-CA32-42A6-9176-B22CEC13B8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48328087-CA32-42A6-9176-B22CEC13B8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48328087-CA32-42A6-9176-B22CEC13B8E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

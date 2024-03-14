@@ -4,7 +4,7 @@ namespace Hajos
     {
         List<Kérdés> ÖsszesKérdés; //referencia -> memóriában nem foglaltunk helyet neki, null érték
         List<Kérdés> AktualisKérdés = new List<Kérdés>();
-        int MegjelenitettKérdésekSzáma = 5;
+        int MegjelenitettKérdésekSzáma = 0;
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +14,7 @@ namespace Hajos
         private void Form1_Load(object sender, EventArgs e)
         {
             ÖsszesKérdés = Beolvas();
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 3; i++)
             {
                 AktualisKérdés.Add(ÖsszesKérdés[0]);
                 ÖsszesKérdés.RemoveAt(0);
@@ -41,8 +41,19 @@ namespace Hajos
                 pictureBox1.Visible = true;
                 pictureBox1.Load("https://storage.altinum.hu/hajo/" + kérdés.URL);
             }
+
+            //if (kérdés.HelyesVálaszokSzáma == 3) 
+            //{
+            //    AktualisKérdés.RemoveAt(MegjelenitettKérdésekSzáma);
+            //    AktualisKérdés.Add(ÖsszesKérdés[0]);
+            //}
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = AktualisKérdés;
+
         }
 
+
+        //Fájl beolvasása
         List<Kérdés> Beolvas()
         {
             List<Kérdés> kérdések = new List<Kérdés>();
@@ -79,19 +90,28 @@ namespace Hajos
 
         }
 
-
-
+        //tovább gomb
         private void button1_Click(object sender, EventArgs e)
         {
             MegjelenitettKérdésekSzáma++;
             if (MegjelenitettKérdésekSzáma == AktualisKérdés.Count) MegjelenitettKérdésekSzáma = 0;
+            if (AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma == 3)
+            {
+                AktualisKérdés.RemoveAt(MegjelenitettKérdésekSzáma);
+                AktualisKérdés.Add(ÖsszesKérdés[0]);
+
+            }
 
             KérdésMegjelenítése(AktualisKérdés[MegjelenitettKérdésekSzáma]);
             textBox1.BackColor = Color.White;
             textBox2.BackColor = Color.White;
             textBox3.BackColor = Color.White;
+            dataGridView1.DataSource = AktualisKérdés;
+            
         }
 
+
+        //3 válasz
         private void textBox1_Click(object sender, EventArgs e)
         {
             
@@ -105,6 +125,8 @@ namespace Hajos
                 textBox1.BackColor = Color.DarkSalmon;
                 AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma = 0;
             }
+            //Töröl();
+
         }
 
         private void textBox2_Click(object sender, EventArgs e)
@@ -119,7 +141,7 @@ namespace Hajos
                 textBox2.BackColor = Color.DarkSalmon;
                 AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma = 0;
             }
-
+            //Töröl();
         }
 
         private void textBox3_Click(object sender, EventArgs e)
@@ -134,7 +156,18 @@ namespace Hajos
                 textBox3.BackColor = Color.DarkSalmon;
                 AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma = 0;
             }
+            //Töröl();
+        }
+        
+        void Töröl()
+        {
+            if (AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma == 3)
+            {
+                AktualisKérdés.RemoveAt(MegjelenitettKérdésekSzáma);
+                AktualisKérdés.Add(ÖsszesKérdés[0]);
 
+            }
+            //dataGridView1.DataSource = AktualisKérdés;
         }
 
         

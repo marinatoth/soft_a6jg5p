@@ -1,9 +1,11 @@
+using System.ComponentModel;
+
 namespace Hajos
 {
     public partial class Form1 : Form
     {
         List<Kérdés> ÖsszesKérdés; //referencia -> memóriában nem foglaltunk helyet neki, null érték
-        List<Kérdés> AktualisKérdés = new List<Kérdés>();
+        BindingList<Kérdés> AktualisKérdés = new BindingList<Kérdés>();
         int MegjelenitettKérdésekSzáma = 0;
         public Form1()
         {
@@ -107,20 +109,20 @@ namespace Hajos
             textBox2.BackColor = Color.White;
             textBox3.BackColor = Color.White;
             dataGridView1.DataSource = AktualisKérdés;
-            
+
         }
 
 
         //3 válasz
         private void textBox1_Click(object sender, EventArgs e)
         {
-            
-            if(AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálasz == 1)
+
+            if (AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálasz == 1)
             {
                 textBox1.BackColor = Color.LightGreen;
                 AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma++;
             }
-            else 
+            else
             {
                 textBox1.BackColor = Color.DarkSalmon;
                 AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma = 0;
@@ -158,7 +160,7 @@ namespace Hajos
             }
             //Töröl();
         }
-        
+
         void Töröl()
         {
             if (AktualisKérdés[MegjelenitettKérdésekSzáma].HelyesVálaszokSzáma == 3)
@@ -170,6 +172,6 @@ namespace Hajos
             //dataGridView1.DataSource = AktualisKérdés;
         }
 
-        
+
     }
 }

@@ -20,6 +20,14 @@ namespace KígyósJáték
         List<KígyóElem> kígyó = new List<KígyóElem>();
         private void Form1_Load(object sender, EventArgs e)
         {
+            NewMethod();
+
+        }
+
+        private void NewMethod()
+        {
+            Controls.Clear();
+            timer1.Enabled = true;
             for (int i = 0; i < rn.Next(1, 3); i++)
             {
                 Alma alma = new Alma();
@@ -27,13 +35,19 @@ namespace KígyósJáték
                 alma.Left = rn.Next(ClientRectangle.Width / KígyóElem.méret) * KígyóElem.méret;
                 Controls.Add(alma);
             }
-            
-                Méreg méreg = new Méreg();
-                méreg.Top = rn.Next(ClientRectangle.Height / KígyóElem.méret) * KígyóElem.méret;
-                méreg.Left = rn.Next(ClientRectangle.Width / KígyóElem.méret) * KígyóElem.méret;
-                Controls.Add(méreg);
-            
 
+            Méreg méreg = new Méreg();
+            méreg.Top = rn.Next(ClientRectangle.Height / KígyóElem.méret) * KígyóElem.méret;
+            méreg.Left = rn.Next(ClientRectangle.Width / KígyóElem.méret) * KígyóElem.méret;
+            Controls.Add(méreg);
+
+            fej_X = 100;
+            fej_Y = 100;
+
+            irány_X = 1;
+            irány_Y = 0;
+            lépésSzám =0;
+            hossz = 5;
 
         }
 
@@ -53,8 +67,7 @@ namespace KígyósJáték
                     KígyóElem k = (KígyóElem)elem;
                     if (k.Top == fej_Y && k.Left == fej_X)
                     {
-                        timer1.Enabled = false;
-                        MessageBox.Show("GAME OVER");
+                        GameOver();
                     }
                 }
 
@@ -81,8 +94,8 @@ namespace KígyósJáték
                     Méreg m = (Méreg)elem;
                     if (m.Top == fej_Y && m.Left == fej_X)
                     {
-                        timer1.Enabled = false;
-                        MessageBox.Show("GAME OVER");
+                        GameOver();
+
                     }
                 }
             }
@@ -104,7 +117,28 @@ namespace KígyósJáték
             if (lépésSzám % 2 == 0) kígyóElem.BackColor = Color.LightPink;
         }
 
+        private void GameOver()
+        {
+            timer1.Enabled = false;
+            //MessageBox.Show("GAME OVER");
 
+            ered ered = new ered();
+
+            var r = ered.ShowDialog();
+
+            if (r == DialogResult.Cancel)
+            {
+                System.Environment.Exit(0);
+            }
+            if (r == DialogResult.OK)
+            {
+
+            }
+            if (r == DialogResult.Retry)
+            {
+                NewMethod();
+            }
+        }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {

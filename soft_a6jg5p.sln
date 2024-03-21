@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoveButton", "LoveButton\Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jatek", "jatek\jatek.csproj", "{48328087-CA32-42A6-9176-B22CEC13B8E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hajos", "Hajos\Hajos.csproj", "{87848553-DEB2-493F-BB91-221757EC8A1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hajos", "Hajos\Hajos.csproj", "{87848553-DEB2-493F-BB91-221757EC8A1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KígyósJáték", "KígyósJáték\KígyósJáték.csproj", "{48C31813-6168-40B3-BA46-0714D56621EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{87848553-DEB2-493F-BB91-221757EC8A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87848553-DEB2-493F-BB91-221757EC8A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87848553-DEB2-493F-BB91-221757EC8A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C31813-6168-40B3-BA46-0714D56621EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C31813-6168-40B3-BA46-0714D56621EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C31813-6168-40B3-BA46-0714D56621EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C31813-6168-40B3-BA46-0714D56621EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

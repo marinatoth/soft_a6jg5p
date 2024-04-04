@@ -79,12 +79,25 @@ namespace KígyósJáték
                         hossz++;
                         Controls.Remove(a);
 
-                        for (int i = 0; i < rn.Next(3); i++)
+                        if (hossz < 10)
                         {
-                            Alma alma = new Alma();
-                            alma.Top = rn.Next(ClientRectangle.Height / KígyóElem.méret) * KígyóElem.méret;
-                            alma.Left = rn.Next(ClientRectangle.Width / KígyóElem.méret) * KígyóElem.méret;
-                            Controls.Add(alma);
+                            for (int i = 0; i < rn.Next(1, 4); i++)
+                            {
+                                Alma alma = new Alma();
+                                alma.Top = rn.Next(ClientRectangle.Height / KígyóElem.méret) * KígyóElem.méret;
+                                alma.Left = rn.Next(ClientRectangle.Width / KígyóElem.méret) * KígyóElem.méret;
+                                Controls.Add(alma);
+                            }
+                        }
+                        else
+                        {
+                            for (int i = 0; i < rn.Next(3); i++)
+                            {
+                                Alma alma = new Alma();
+                                alma.Top = rn.Next(ClientRectangle.Height / KígyóElem.méret) * KígyóElem.méret;
+                                alma.Left = rn.Next(ClientRectangle.Width / KígyóElem.méret) * KígyóElem.méret;
+                                Controls.Add(alma);
+                            }
                         }
                     }
                 }

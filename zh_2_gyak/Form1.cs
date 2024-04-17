@@ -84,10 +84,19 @@ namespace zh_2_gyak
             int darab = 0;
 
             double minimum = double.MaxValue;
+            string leggyorsabb = string.Empty;
 
             //átlag
             foreach (var item in futók)
             {
+                //min
+                if (item.EredmenyPerc <minimum)
+                {
+                    minimum = item.EredmenyPerc;
+                    leggyorsabb = item.Nev;
+                }
+
+
                 if (item.Nemzetiseg == "USA")
                 {
                     összeg += item.EredmenyPerc;
@@ -95,7 +104,7 @@ namespace zh_2_gyak
                 }
             }
             double átlag = összeg / futók.Count;
-            
+            MessageBox.Show($"A leggyorsabb futó: {leggyorsabb}");
         }
     }
 }

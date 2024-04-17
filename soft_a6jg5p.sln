@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KígyósJáték", "Kígyós
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdatKotes", "AdatKotes\AdatKotes.csproj", "{1C7F0941-CCC0-4B4E-9883-A41742F3FB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zh_2_gyak", "zh_2_gyak\zh_2_gyak.csproj", "{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zh_2_gyak_Futok", "zh_2_gyak\zh_2_gyak_Futok.csproj", "{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

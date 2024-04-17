@@ -86,7 +86,7 @@ namespace zh_2_gyak
             double minimum = double.MaxValue;
             string leggyorsabb = string.Empty;
 
-            //átlag
+            
             foreach (var item in futók)
             {
                 //min
@@ -96,7 +96,7 @@ namespace zh_2_gyak
                     leggyorsabb = item.Nev;
                 }
 
-
+                //átlag
                 if (item.Nemzetiseg == "USA")
                 {
                     összeg += item.EredmenyPerc;

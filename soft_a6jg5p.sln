@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hajos", "Hajos\Hajos.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KígyósJáték", "KígyósJáték\KígyósJáték.csproj", "{48C31813-6168-40B3-BA46-0714D56621EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdatKotes", "AdatKotes\AdatKotes.csproj", "{1C7F0941-CCC0-4B4E-9883-A41742F3FB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdatKotes", "AdatKotes\AdatKotes.csproj", "{1C7F0941-CCC0-4B4E-9883-A41742F3FB73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zh_2_gyak", "zh_2_gyak\zh_2_gyak.csproj", "{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{1C7F0941-CCC0-4B4E-9883-A41742F3FB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C7F0941-CCC0-4B4E-9883-A41742F3FB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C7F0941-CCC0-4B4E-9883-A41742F3FB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003A22E9-93F7-47B3-8C2D-EDE826E2C0CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
